@@ -140,6 +140,7 @@
   `;
 
   for (const [pName, { quantity }] of Object.entries(potionStock)) {
+    report += `${pName}: ${quantity} left\n`;
   }
   alert(report);
 })();
